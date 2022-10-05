@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB25E45928A987CE00F16E26 /* SendGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DB25E45828A987CE00F16E26 /* SendGrid */; };
+		DB2A7152288377300049B849 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7151288377300049B849 /* UserHomeViewController.swift */; };
+		DB2A71542883794F0049B849 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A71532883794F0049B849 /* UserProfile.swift */; };
+		DB8F01212892FF0300B0A4CC /* SelectSeatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F01202892FF0300B0A4CC /* SelectSeatVC.swift */; };
+		DB9C5C142883F89E0060F2EE /* TheaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5C122883F89E0060F2EE /* TheaterModel.swift */; };
+		DB9C5C152883F89E0060F2EE /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5C132883F89E0060F2EE /* MovieModel.swift */; };
+		DB9C5C182883FA2B0060F2EE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DB9C5C172883FA2B0060F2EE /* SDWebImage */; };
+		DB9C5C1A288406600060F2EE /* AuthNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5C19288406600060F2EE /* AuthNav.swift */; };
+		DB9C5C1C2884067C0060F2EE /* HomeNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5C1B2884067C0060F2EE /* HomeNav.swift */; };
+		DB9C5C1E288406920060F2EE /* AdminNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C5C1D288406920060F2EE /* AdminNav.swift */; };
+		DBB4ABC428841103006A5D55 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4ABC328841103006A5D55 /* ForgotPasswordViewController.swift */; };
+		DBB4ABC628841189006A5D55 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4ABC528841188006A5D55 /* ResetPasswordViewController.swift */; };
+		DBB87AD82895A634008DD1EA /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB87AD72895A634008DD1EA /* BookingModel.swift */; };
+		DBC6235328797586007A8A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6235228797586007A8A74 /* AppDelegate.swift */; };
+		DBC6235528797586007A8A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6235428797586007A8A74 /* SceneDelegate.swift */; };
+		DBC6235728797586007A8A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6235628797586007A8A74 /* ViewController.swift */; };
+		DBC6235A28797586007A8A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC6235828797586007A8A74 /* Main.storyboard */; };
+		DBC6235C28797588007A8A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC6235B28797588007A8A74 /* Assets.xcassets */; };
+		DBC6235F28797588007A8A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC6235D28797588007A8A74 /* LaunchScreen.storyboard */; };
+		DBC6236928798960007A8A74 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6236828798960007A8A74 /* WelcomeVC.swift */; };
+		DBC6237A287989CC007A8A74 /* GClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6236B287989CC007A8A74 /* GClass.swift */; };
+		DBC6237B287989CC007A8A74 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6236C287989CC007A8A74 /* UIApplication+Extension.swift */; };
+		DBC6237C287989CC007A8A74 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6236D287989CC007A8A74 /* UIImageView+Extensions.swift */; };
+		DBC6237D287989CC007A8A74 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6236E287989CC007A8A74 /* UIViewController+Extensions.swift */; };
+		DBC6237E287989CC007A8A74 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6236F287989CC007A8A74 /* UIColor+Extension.swift */; };
+		DBC6237F287989CC007A8A74 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62370287989CC007A8A74 /* Alert.swift */; };
+		DBC62380287989CC007A8A74 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62371287989CC007A8A74 /* UILabel+Extension.swift */; };
+		DBC62381287989CC007A8A74 /* GoogleLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62372287989CC007A8A74 /* GoogleLoginData.swift */; };
+		DBC62382287989CC007A8A74 /* GValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62373287989CC007A8A74 /* GValidations.swift */; };
+		DBC62383287989CC007A8A74 /* GFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62374287989CC007A8A74 /* GFunction.swift */; };
+		DBC62384287989CC007A8A74 /* UITapGesture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62375287989CC007A8A74 /* UITapGesture+Extensions.swift */; };
+		DBC62385287989CC007A8A74 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62376287989CC007A8A74 /* String+Extension.swift */; };
+		DBC62386287989CC007A8A74 /* UIStoryBoard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62377287989CC007A8A74 /* UIStoryBoard+Extension.swift */; };
+		DBC62387287989CC007A8A74 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62378287989CC007A8A74 /* UICollectionView+Extension.swift */; };
+		DBC62388287989CC007A8A74 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62379287989CC007A8A74 /* String.swift */; };
+		DBC6238A28799412007A8A74 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6238928799412007A8A74 /* SignUpVC.swift */; };
+		DBC6238C287994E1007A8A74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC6238B287994E0007A8A74 /* GoogleService-Info.plist */; };
+		DBC6238F287996F5007A8A74 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DBC6238E287996F5007A8A74 /* FirebaseAuth */; };
+		DBC62391287996F5007A8A74 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DBC62390287996F5007A8A74 /* FirebaseFirestore */; };
+		DBC62393287996F5007A8A74 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DBC62392287996F5007A8A74 /* FirebaseStorage */; };
+		DBC62395287997AE007A8A74 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC62394287997AE007A8A74 /* LoginVC.swift */; };
+		DBC6239828799F8D007A8A74 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6239728799F8D007A8A74 /* UserModel.swift */; };
+		DBCA8138288C3739006A0978 /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA8137288C3739006A0978 /* AddMovieViewController.swift */; };
+		DBCA813A288C3774006A0978 /* AddTheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA8139288C3774006A0978 /* AddTheaterViewController.swift */; };
+		DBCA813C288C3BDB006A0978 /* HomePageTheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA813B288C3BDB006A0978 /* HomePageTheaterViewController.swift */; };
+		DBCA813E288C3DB9006A0978 /* HomePageMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA813D288C3DB9006A0978 /* HomePageMovieViewController.swift */; };
+		DBCA8140288C51FB006A0978 /* UserTheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA813F288C51FB006A0978 /* UserTheaterViewController.swift */; };
+		DBD353D428B803A40082BD4F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD353D328B803A40082BD4F /* HistoryViewController.swift */; };
+		F95BD5509A02247DA57EF509 /* Pods_CinemaFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB1F661896AF24769610ACE /* Pods_CinemaFinder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBDE64D328931F1F00728907 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BEB1F661896AF24769610ACE /* Pods_CinemaFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemaFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0538501A8F5972F5F100AF9 /* Pods-CinemaFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaFinder.debug.xcconfig"; path = "Target Support Files/Pods-CinemaFinder/Pods-CinemaFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		CDB4B0CE8D11E136FE6A5344 /* Pods-CinemaFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaFinder.release.xcconfig"; path = "Target Support Files/Pods-CinemaFinder/Pods-CinemaFinder.release.xcconfig"; sourceTree = "<group>"; };
+		DB21E20F28833BEB00001734 /* CinemaFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CinemaFinder.entitlements; sourceTree = "<group>"; };
+		DB2A7151288377300049B849 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		DB2A71532883794F0049B849 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		DB8F01202892FF0300B0A4CC /* SelectSeatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatVC.swift; sourceTree = "<group>"; };
+		DB9C5C122883F89E0060F2EE /* TheaterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterModel.swift; sourceTree = "<group>"; };
+		DB9C5C132883F89E0060F2EE /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		DB9C5C19288406600060F2EE /* AuthNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNav.swift; sourceTree = "<group>"; };
+		DB9C5C1B2884067C0060F2EE /* HomeNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNav.swift; sourceTree = "<group>"; };
+		DB9C5C1D288406920060F2EE /* AdminNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminNav.swift; sourceTree = "<group>"; };
+		DBB4ABC328841103006A5D55 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		DBB4ABC528841188006A5D55 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		DBB87AD72895A634008DD1EA /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		DBC6234F28797586007A8A74 /* CinemaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC6235228797586007A8A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBC6235428797586007A8A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DBC6235628797586007A8A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBC6235928797586007A8A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBC6235B28797588007A8A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBC6235E28797588007A8A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBC6236028797588007A8A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC6236828798960007A8A74 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		DBC6236B287989CC007A8A74 /* GClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GClass.swift; sourceTree = "<group>"; };
+		DBC6236C287989CC007A8A74 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		DBC6236D287989CC007A8A74 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		DBC6236E287989CC007A8A74 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		DBC6236F287989CC007A8A74 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DBC62370287989CC007A8A74 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		DBC62371287989CC007A8A74 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		DBC62372287989CC007A8A74 /* GoogleLoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleLoginData.swift; sourceTree = "<group>"; };
+		DBC62373287989CC007A8A74 /* GValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GValidations.swift; sourceTree = "<group>"; };
+		DBC62374287989CC007A8A74 /* GFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFunction.swift; sourceTree = "<group>"; };
+		DBC62375287989CC007A8A74 /* UITapGesture+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGesture+Extensions.swift"; sourceTree = "<group>"; };
+		DBC62376287989CC007A8A74 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DBC62377287989CC007A8A74 /* UIStoryBoard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Extension.swift"; sourceTree = "<group>"; };
+		DBC62378287989CC007A8A74 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		DBC62379287989CC007A8A74 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DBC6238928799412007A8A74 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		DBC6238B287994E0007A8A74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBC62394287997AE007A8A74 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DBC6239728799F8D007A8A74 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DBCA8137288C3739006A0978 /* AddMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
+		DBCA8139288C3774006A0978 /* AddTheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTheaterViewController.swift; sourceTree = "<group>"; };
+		DBCA813B288C3BDB006A0978 /* HomePageTheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTheaterViewController.swift; sourceTree = "<group>"; };
+		DBCA813D288C3DB9006A0978 /* HomePageMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageMovieViewController.swift; sourceTree = "<group>"; };
+		DBCA813F288C51FB006A0978 /* UserTheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTheaterViewController.swift; sourceTree = "<group>"; };
+		DBD353D328B803A40082BD4F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBC6234C28797586007A8A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB25E45928A987CE00F16E26 /* SendGrid in Frameworks */,
+				DBC6238F287996F5007A8A74 /* FirebaseAuth in Frameworks */,
+				DBC62391287996F5007A8A74 /* FirebaseFirestore in Frameworks */,
+				DBC62393287996F5007A8A74 /* FirebaseStorage in Frameworks */,
+				F95BD5509A02247DA57EF509 /* Pods_CinemaFinder.framework in Frameworks */,
+				DB9C5C182883FA2B0060F2EE /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8A6FE9B00BCB874B63E7BA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0538501A8F5972F5F100AF9 /* Pods-CinemaFinder.debug.xcconfig */,
+				CDB4B0CE8D11E136FE6A5344 /* Pods-CinemaFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBC6234628797586007A8A74 = {
+			isa = PBXGroup;
+			children = (
+				DBC6235128797586007A8A74 /* CinemaFinder */,
+				DBC6235028797586007A8A74 /* Products */,
+				B8A6FE9B00BCB874B63E7BA4 /* Pods */,
+				F4184F8D68EF653FF290F05E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBC6235028797586007A8A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBC6234F28797586007A8A74 /* CinemaFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC6235128797586007A8A74 /* CinemaFinder */ = {
+			isa = PBXGroup;
+			children = (
+				DB21E20F28833BEB00001734 /* CinemaFinder.entitlements */,
+				DBC6239628799F7D007A8A74 /* DataModel */,
+				DBC6238B287994E0007A8A74 /* GoogleService-Info.plist */,
+				DBC6236A287989CC007A8A74 /* Extensions */,
+				DBC6236628798946007A8A74 /* Controllers */,
+				DBC6235228797586007A8A74 /* AppDelegate.swift */,
+				DBC6235428797586007A8A74 /* SceneDelegate.swift */,
+				DBC6235628797586007A8A74 /* ViewController.swift */,
+				DBC6235828797586007A8A74 /* Main.storyboard */,
+				DBC6235B28797588007A8A74 /* Assets.xcassets */,
+				DBC6235D28797588007A8A74 /* LaunchScreen.storyboard */,
+				DBC6236028797588007A8A74 /* Info.plist */,
+				DB9C5C19288406600060F2EE /* AuthNav.swift */,
+				DB9C5C1B2884067C0060F2EE /* HomeNav.swift */,
+				DB9C5C1D288406920060F2EE /* AdminNav.swift */,
+			);
+			path = CinemaFinder;
+			sourceTree = "<group>";
+		};
+		DBC6236628798946007A8A74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC6236728798950007A8A74 /* Views */,
+				DB2A7151288377300049B849 /* UserHomeViewController.swift */,
+				DB2A71532883794F0049B849 /* UserProfile.swift */,
+				DBB4ABC328841103006A5D55 /* ForgotPasswordViewController.swift */,
+				DBB4ABC528841188006A5D55 /* ResetPasswordViewController.swift */,
+				DBCA8137288C3739006A0978 /* AddMovieViewController.swift */,
+				DBCA8139288C3774006A0978 /* AddTheaterViewController.swift */,
+				DBCA813B288C3BDB006A0978 /* HomePageTheaterViewController.swift */,
+				DBCA813D288C3DB9006A0978 /* HomePageMovieViewController.swift */,
+				DBCA813F288C51FB006A0978 /* UserTheaterViewController.swift */,
+				DB8F01202892FF0300B0A4CC /* SelectSeatVC.swift */,
+				DBD353D328B803A40082BD4F /* HistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBC6236728798950007A8A74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBC6236828798960007A8A74 /* WelcomeVC.swift */,
+				DBC6238928799412007A8A74 /* SignUpVC.swift */,
+				DBC62394287997AE007A8A74 /* LoginVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBC6236A287989CC007A8A74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DBC6236B287989CC007A8A74 /* GClass.swift */,
+				DBC6236C287989CC007A8A74 /* UIApplication+Extension.swift */,
+				DBC6236D287989CC007A8A74 /* UIImageView+Extensions.swift */,
+				DBC6236E287989CC007A8A74 /* UIViewController+Extensions.swift */,
+				DBC6236F287989CC007A8A74 /* UIColor+Extension.swift */,
+				DBC62370287989CC007A8A74 /* Alert.swift */,
+				DBC62371287989CC007A8A74 /* UILabel+Extension.swift */,
+				DBC62372287989CC007A8A74 /* GoogleLoginData.swift */,
+				DBC62373287989CC007A8A74 /* GValidations.swift */,
+				DBC62374287989CC007A8A74 /* GFunction.swift */,
+				DBC62375287989CC007A8A74 /* UITapGesture+Extensions.swift */,
+				DBC62376287989CC007A8A74 /* String+Extension.swift */,
+				DBC62377287989CC007A8A74 /* UIStoryBoard+Extension.swift */,
+				DBC62378287989CC007A8A74 /* UICollectionView+Extension.swift */,
+				DBC62379287989CC007A8A74 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DBC6239628799F7D007A8A74 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C5C132883F89E0060F2EE /* MovieModel.swift */,
+				DB9C5C122883F89E0060F2EE /* TheaterModel.swift */,
+				DBC6239728799F8D007A8A74 /* UserModel.swift */,
+				DBB87AD72895A634008DD1EA /* BookingModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F4184F8D68EF653FF290F05E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1F661896AF24769610ACE /* Pods_CinemaFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBC6234E28797586007A8A74 /* CinemaFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC6236328797588007A8A74 /* Build configuration list for PBXNativeTarget "CinemaFinder" */;
+			buildPhases = (
+				19814F8CBA7E19CC3908EA82 /* [CP] Check Pods Manifest.lock */,
+				DBC6234B28797586007A8A74 /* Sources */,
+				DBC6234C28797586007A8A74 /* Frameworks */,
+				DBC6234D28797586007A8A74 /* Resources */,
+				DBDE64D328931F1F00728907 /* Embed Frameworks */,
+				4EB3DA3349F32EDDCC4E3445 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinemaFinder;
+			packageProductDependencies = (
+				DBC6238E287996F5007A8A74 /* FirebaseAuth */,
+				DBC62390287996F5007A8A74 /* FirebaseFirestore */,
+				DBC62392287996F5007A8A74 /* FirebaseStorage */,
+				DB9C5C172883FA2B0060F2EE /* SDWebImage */,
+				DB25E45828A987CE00F16E26 /* SendGrid */,
+			);
+			productName = CinemaFinder;
+			productReference = DBC6234F28797586007A8A74 /* CinemaFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBC6234728797586007A8A74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DBC6234E28797586007A8A74 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = DBC6234A28797586007A8A74 /* Build configuration list for PBXProject "CinemaFinder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBC6234628797586007A8A74;
+			packageReferences = (
+				DBC6238D287996F4007A8A74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DB9C5C162883FA2B0060F2EE /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				DB25E45728A987CE00F16E26 /* XCRemoteSwiftPackageReference "sendgrid-swift" */,
+			);
+			productRefGroup = DBC6235028797586007A8A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBC6234E28797586007A8A74 /* CinemaFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBC6234D28797586007A8A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC6235F28797588007A8A74 /* LaunchScreen.storyboard in Resources */,
+				DBC6238C287994E1007A8A74 /* GoogleService-Info.plist in Resources */,
+				DBC6235C28797588007A8A74 /* Assets.xcassets in Resources */,
+				DBC6235A28797586007A8A74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19814F8CBA7E19CC3908EA82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CinemaFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EB3DA3349F32EDDCC4E3445 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CinemaFinder/Pods-CinemaFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CinemaFinder/Pods-CinemaFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemaFinder/Pods-CinemaFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBC6234B28797586007A8A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCA813C288C3BDB006A0978 /* HomePageTheaterViewController.swift in Sources */,
+				DBCA8140288C51FB006A0978 /* UserTheaterViewController.swift in Sources */,
+				DBC62388287989CC007A8A74 /* String.swift in Sources */,
+				DBCA813E288C3DB9006A0978 /* HomePageMovieViewController.swift in Sources */,
+				DB9C5C1E288406920060F2EE /* AdminNav.swift in Sources */,
+				DBC62387287989CC007A8A74 /* UICollectionView+Extension.swift in Sources */,
+				DB9C5C152883F89E0060F2EE /* MovieModel.swift in Sources */,
+				DBC62395287997AE007A8A74 /* LoginVC.swift in Sources */,
+				DBC62385287989CC007A8A74 /* String+Extension.swift in Sources */,
+				DBCA813A288C3774006A0978 /* AddTheaterViewController.swift in Sources */,
+				DBC62381287989CC007A8A74 /* GoogleLoginData.swift in Sources */,
+				DBB87AD82895A634008DD1EA /* BookingModel.swift in Sources */,
+				DBC62383287989CC007A8A74 /* GFunction.swift in Sources */,
+				DBC62380287989CC007A8A74 /* UILabel+Extension.swift in Sources */,
+				DBC6235728797586007A8A74 /* ViewController.swift in Sources */,
+				DBC62382287989CC007A8A74 /* GValidations.swift in Sources */,
+				DBC6238A28799412007A8A74 /* SignUpVC.swift in Sources */,
+				DB2A7152288377300049B849 /* UserHomeViewController.swift in Sources */,
+				DBC6239828799F8D007A8A74 /* UserModel.swift in Sources */,
+				DBC6237C287989CC007A8A74 /* UIImageView+Extensions.swift in Sources */,
+				DBC6235328797586007A8A74 /* AppDelegate.swift in Sources */,
+				DB9C5C1C2884067C0060F2EE /* HomeNav.swift in Sources */,
+				DB2A71542883794F0049B849 /* UserProfile.swift in Sources */,
+				DBC6237E287989CC007A8A74 /* UIColor+Extension.swift in Sources */,
+				DBC62386287989CC007A8A74 /* UIStoryBoard+Extension.swift in Sources */,
+				DB9C5C142883F89E0060F2EE /* TheaterModel.swift in Sources */,
+				DBB4ABC628841189006A5D55 /* ResetPasswordViewController.swift in Sources */,
+				DBC6235528797586007A8A74 /* SceneDelegate.swift in Sources */,
+				DBC6237D287989CC007A8A74 /* UIViewController+Extensions.swift in Sources */,
+				DBC6237A287989CC007A8A74 /* GClass.swift in Sources */,
+				DBD353D428B803A40082BD4F /* HistoryViewController.swift in Sources */,
+				DBB4ABC428841103006A5D55 /* ForgotPasswordViewController.swift in Sources */,
+				DBC6237B287989CC007A8A74 /* UIApplication+Extension.swift in Sources */,
+				DB8F01212892FF0300B0A4CC /* SelectSeatVC.swift in Sources */,
+				DBC62384287989CC007A8A74 /* UITapGesture+Extensions.swift in Sources */,
+				DBC6237F287989CC007A8A74 /* Alert.swift in Sources */,
+				DBC6236928798960007A8A74 /* WelcomeVC.swift in Sources */,
+				DB9C5C1A288406600060F2EE /* AuthNav.swift in Sources */,
+				DBCA8138288C3739006A0978 /* AddMovieViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBC6235828797586007A8A74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC6235928797586007A8A74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBC6235D28797588007A8A74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC6235E28797588007A8A74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBC6236128797588007A8A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBC6236228797588007A8A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBC6236428797588007A8A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0538501A8F5972F5F100AF9 /* Pods-CinemaFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CinemaFinder/CinemaFinder.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CinemaFinder",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaFinder/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This allows you to upload photos from within the app.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This allows you to take photos from within the app.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This allows you to choose photos from library within the app.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CinemaFinder.cinemaFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		DBC6236528797588007A8A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB4B0CE8D11E136FE6A5344 /* Pods-CinemaFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CinemaFinder/CinemaFinder.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CinemaFinder",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaFinder/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This allows you to upload photos from within the app.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This allows you to take photos from within the app.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This allows you to choose photos from library within the app.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CinemaFinder.cinemaFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBC6234A28797586007A8A74 /* Build configuration list for PBXProject "CinemaFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC6236128797588007A8A74 /* Debug */,
+				DBC6236228797588007A8A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC6236328797588007A8A74 /* Build configuration list for PBXNativeTarget "CinemaFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC6236428797588007A8A74 /* Debug */,
+				DBC6236528797588007A8A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB25E45728A987CE00F16E26 /* XCRemoteSwiftPackageReference "sendgrid-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scottkawai/sendgrid-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		DB9C5C162883FA2B0060F2EE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DBC6238D287996F4007A8A74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB25E45828A987CE00F16E26 /* SendGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB25E45728A987CE00F16E26 /* XCRemoteSwiftPackageReference "sendgrid-swift" */;
+			productName = SendGrid;
+		};
+		DB9C5C172883FA2B0060F2EE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB9C5C162883FA2B0060F2EE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		DBC6238E287996F5007A8A74 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBC6238D287996F4007A8A74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DBC62390287996F5007A8A74 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBC6238D287996F4007A8A74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DBC62392287996F5007A8A74 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBC6238D287996F4007A8A74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DBC6234728797586007A8A74 /* Project object */;
+}

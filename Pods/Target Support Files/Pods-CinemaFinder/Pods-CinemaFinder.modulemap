@@ -1,0 +1,6 @@
+framework module Pods_CinemaFinder {
+  umbrella header "Pods-CinemaFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

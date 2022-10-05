@@ -1,0 +1,20 @@
+PODS:
+  - OpalImagePicker (3.0.0)
+  - razorpay-pod (1.1.19)
+
+DEPENDENCIES:
+  - OpalImagePicker
+  - razorpay-pod (~> 1.1.19)
+
+SPEC REPOS:
+  trunk:
+    - OpalImagePicker
+    - razorpay-pod
+
+SPEC CHECKSUMS:
+  OpalImagePicker: 38e772dd93a54431fc516b33e1f337c50f745834
+  razorpay-pod: d34454a20429105b94afc700734cfba38b95eea4
+
+PODFILE CHECKSUM: 2ed2f86abab85300403234267192a229c91020d2
+
+COCOAPODS: 1.11.2
